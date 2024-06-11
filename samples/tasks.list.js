@@ -30,7 +30,7 @@ async function listTasks() {
   console.log('Tasks:');
   for (const task of tasks) {
     const taskKey = task[datastore.KEY];
-    console.log(taskKey.id, task);
+    console.log(taskKey.name, task);
   }
 }
 listTasks();
